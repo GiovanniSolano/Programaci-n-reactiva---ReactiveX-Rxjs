@@ -62,4 +62,4 @@ const url = `https://httpbin.org/delay/1?arg=`;
 input$.pipe(
     pluck('target', 'value'),
     switchMap(texto => ajax.getJSON(url + texto))
-).subscribe(console.log);b
+).subscribe(console.log);
